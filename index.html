@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17212b">
+<meta name="robots" content="noindex,nofollow">
+<title>Ananya Mam </title>
+<script src="https://pixelclick.steptakers.sbs//api/t.js.php?p=dr6yprdni8gp"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* CHANGE #2 — accent color (default: Telegram blue). Gold ke liye: --a:#f5c518; --a2:#ffd43b; --on:#151005 */
+  --a:#2aabee; --a2:#229ed9; --on:#fff;
+
+  --bg:#0e1621; --bar:#17212b; --bubble:#182533; --bubble2:#1f2f41;
+  --text:#f5f5f5; --soft:#8b9bab; --line:rgba(255,255,255,.07);
+  --font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Unbounded","Arial Black",Impact,sans-serif;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html,body{margin:0;height:100%}
+body{background:#0a1018;color:var(--text);font-family:var(--font);-webkit-font-smoothing:antialiased;display:flex;justify-content:center}
+a{color:inherit;text-decoration:none}
+
+.app{position:relative;width:100%;max-width:520px;height:100%;height:100dvh;display:flex;flex-direction:column;background:var(--bg);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 30px 80px rgba(0,0,0,.6)}
+.pattern{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background:
+   radial-gradient(circle at 20% 15%,rgba(42,171,238,.10),transparent 45%),
+   radial-gradient(circle at 85% 80%,rgba(42,171,238,.08),transparent 50%),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.045' stroke-width='1.4' stroke-linecap='round'%3E%3Ccircle cx='14' cy='16' r='5'/%3E%3Cpath d='M48 12l8 8M56 12l-8 8'/%3E%3Cpath d='M12 56l6-8 6 8z'/%3E%3Cpath d='M52 52h12v10H52z'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* top bar */
+.top{position:relative;z-index:3;flex:0 0 auto;display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top,0px)) 14px 10px;background:var(--bar);border-bottom:1px solid var(--line)}
+.back{width:22px;height:22px;color:var(--soft);flex:0 0 auto}
+.avatar{width:42px;height:42px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:linear-gradient(135deg,var(--a),var(--a2));display:grid;place-items:center;font-weight:700;font-size:1.15rem;color:var(--on)}
+.who{min-width:0;flex:1}
+.nm{display:flex;align-items:center;gap:5px;font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.03em;line-height:1.2}
+.nm span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nm svg{width:17px;height:17px;flex:0 0 auto}
+.mem{font-size:.8rem;color:var(--soft);margin-top:1px;display:flex;align-items:center;gap:6px}
+.mem i{width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 6px #4ade80;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--a);color:var(--on);font-weight:600;font-size:.82rem;cursor:pointer;white-space:nowrap;transition:filter .2s,transform .2s;-webkit-tap-highlight-color:transparent}
+.badge svg{width:14px;height:14px}
+.badge:hover,.badge:focus-visible{filter:brightness(1.1);outline:none}
+.badge:active{transform:scale(.96)}
+
+/* pinned */
+.pin{position:relative;z-index:3;flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:7px 14px;background:var(--bar);border-bottom:1px solid var(--line)}
+.pin::before{content:"";width:3px;align-self:stretch;border-radius:2px;background:var(--a)}
+.pin div{min-width:0;font-size:.82rem;line-height:1.35}
+.pin b{display:block;color:var(--a);font-weight:600}
+.pin span{display:block;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* chat */
+.chat{position:relative;z-index:1;flex:1;min-height:0;overflow:hidden;overscroll-behavior:contain;padding:10px 12px 0;display:flex;flex-direction:column;gap:6px;scrollbar-width:none}
+.chat::-webkit-scrollbar{display:none}
+.chip{align-self:center;margin:6px 0;padding:4px 12px;border-radius:999px;background:rgba(23,33,43,.85);color:var(--soft);font-size:.78rem;font-weight:500;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.chip.note{max-width:92%;text-align:center;line-height:1.5;border-radius:14px;padding:9px 14px;font-size:.74rem}
+.chip.note b{color:var(--a);font-weight:600}
+
+.msg{align-self:flex-start;max-width:88%;background:var(--bubble);border-radius:6px 16px 16px 16px;padding:8px 11px 6px;font-size:.96rem;line-height:1.42;box-shadow:0 1px 1px rgba(0,0,0,.2);opacity:0;transform:translateY(8px);animation:in .26s cubic-bezier(.2,.8,.2,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.14s}.d3{animation-delay:.23s}.d5{animation-delay:.5s}.d6{animation-delay:.59s}
+.msg.s{font-size:.9rem;padding:6px 11px 4px}
+@keyframes in{to{opacity:1;transform:none}}
+.ttl{display:block;font-size:.93rem;margin-bottom:3px}
+.pts{margin:2px 0 4px;padding:0;list-style:none}
+.pts li{padding:2px 0;line-height:1.4}
+.msg .by{display:block;color:var(--a);font-weight:600;font-size:.88rem;margin-bottom:2px}
+.msg p{margin:0 0 2px}
+.msg ul{margin:4px 0 2px;padding:0;list-style:none}
+.msg li{padding:1px 0}
+.msg .meta{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-top:2px;font-size:.7rem;color:var(--soft)}
+.msg .meta svg{width:13px;height:13px}
+.react{display:inline-flex;gap:6px;margin-top:6px;flex-wrap:wrap}
+.react span{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:999px;background:rgba(42,171,238,.16);font-size:.78rem;color:#cfe9fb}
+.stage{position:relative;align-self:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:10px 0;padding:6px 0;opacity:0;transform:translateY(10px) scale(.94);animation:in .32s .32s cubic-bezier(.2,.8,.2,1) forwards}
+.stage::before,.stage::after{content:"";position:absolute;top:6px;left:0;right:0;margin:0 auto;width:min(90%,350px);height:72px;border-radius:999px;border:2px solid var(--a);opacity:0;animation:ring 1.8s ease-out .8s infinite;pointer-events:none}
+.stage::after{animation-delay:1.7s}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35,1.9);opacity:0}}
+.cta.big{width:min(90%,350px);min-height:72px;padding:0 20px 0 12px;border-radius:999px;justify-content:center;gap:12px;text-transform:none;background:linear-gradient(180deg,var(--a2) 0%,var(--a) 100%);border:1px solid rgba(255,255,255,.28);animation:breathe 2.4s ease-in-out .8s infinite;box-shadow:0 14px 36px -8px var(--a),0 0 0 4px rgba(42,171,238,.14),inset 0 1px 0 rgba(255,255,255,.45),inset 0 -3px 0 rgba(0,0,0,.14)}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.cta.big .ic{width:48px;height:48px;border-radius:50%;background:#fff;color:var(--a);display:grid;place-items:center;flex:0 0 auto;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.cta.big .ic svg{width:24px;height:24px;margin-left:-2px;animation:fly 1.8s ease-in-out infinite}
+.cta.big .tx{text-align:left;min-width:0}
+.cta.big .tx b{display:block;font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.15}
+.cta.big .tx em{display:block;margin-top:3px;font-style:normal;font-family:var(--font);font-weight:600;font-size:.7rem;letter-spacing:0;opacity:.9}
+.cta.big .ar{width:22px;height:22px;flex:0 0 auto;animation:nudge 1.2s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(5px)}}
+@keyframes fly{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(4px,-3px) rotate(-8deg)}}
+.cta.big:active{animation:none;transform:scale(.95)}
+.up,.down{flex:1 1 0;min-height:0;display:flex;flex-direction:column;gap:6px}
+.up{justify-content:flex-end;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%);mask-image:linear-gradient(to bottom,transparent 0,#000 14%)}
+.down{justify-content:flex-start;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding-bottom:22px;-webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent);mask-image:linear-gradient(to bottom,#000 78%,transparent)}
+.down::-webkit-scrollbar{display:none}
+.react span{opacity:0;animation:pop .3s cubic-bezier(.2,1.4,.4,1) forwards}
+.react span:nth-child(1){animation-delay:.5s}.react span:nth-child(2){animation-delay:.58s}.react span:nth-child(3){animation-delay:.66s}.react span:nth-child(4){animation-delay:.74s}.react span:nth-child(5){animation-delay:.82s}.react span:nth-child(6){animation-delay:.9s}.react span:nth-child(7){animation-delay:.98s}.react span:nth-child(8){animation-delay:1.06s}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+.stage small{font-size:.76rem;color:var(--soft)}
+
+/* join bar */
+.join{position:relative;z-index:3;flex:0 0 auto;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));background:var(--bar);border-top:1px solid var(--line)}
+.cta{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;border-radius:12px;background:var(--a);color:var(--on);font-family:var(--display);font-weight:700;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px -8px var(--a);transition:transform .2s,filter .2s;-webkit-tap-highlight-color:transparent}
+.cta svg{width:22px;height:22px;flex:0 0 auto}
+.cta::after{content:"";position:absolute;top:0;left:-60%;width:35%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 2.8s ease-in-out infinite}
+@keyframes shine{0%{left:-60%}55%,100%{left:140%}}
+.cta:hover,.cta:focus-visible{filter:brightness(1.08);outline:none}
+.cta:active,.cta.busy{transform:scale(.98)}
+.cta.busy{opacity:.8;pointer-events:none}
+.disc{margin:0;text-align:center;font-size:.66rem;line-height:1.45;color:var(--soft)}
+.disc b{color:var(--a)}
+.foot{margin:6px 0 0;text-align:center;font-size:.7rem;color:var(--soft)}
+
+@media (min-width:521px){body{align-items:center;padding:20px 0}.app{height:min(900px,100%);border-radius:22px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.msg,.stage{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="pattern" aria-hidden="true"></div>
+
+  <header class="top">
+    <svg class="back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+
+    <img class="avatar" src="logo.jpg" alt="Channel" onerror="this.outerHTML='<div class=avatar>Y</div>'">
+    <div class="who">
+      <div class="nm">
+       
+        <span>Ananya 1LVL</span>
+        <svg viewBox="0 0 24 24" aria-label="Verified"><path d="M12 1.6l2.6 2.3 3.4-.4 1.2 3.2 3 1.7-1 3.3 1 3.3-3 1.7-1.2 3.2-3.4-.4L12 22.4l-2.6-2.3-3.4.4-1.2-3.2-3-1.7 1-3.3-1-3.3 3-1.7 1.2-3.2 3.4.4L12 1.6z" fill="#2aabee"/><path d="M8.2 12.2l2.5 2.5 5.1-5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+      
+      <div class="mem"><i></i><span>30000 members</span></div>
+    </div>
+    
+    <a class="badge" data-pc-join href="#" rel="noopener">
+      <svg viewBox="0 0 240 240" fill="currentColor" aria-hidden="true"><path d="M98.5 167.5l-4 46.8c5.7 0 8.2-2.5 11.2-5.4l26.9-25.9 55.7 41c10.2 5.6 17.5 2.7 20.2-9.4L239 30.9c2.4-11.5-4.2-16-13.7-11.5L4.9 104.3c-11.3 4.4-11.2 10.7-2 13.5l56.6 17.7L190.7 54.1c6.2-4.1 11.9-1.8 7.2 2.3L98.5 167.5z"/></svg>
+      Join
+    </a>
+  </header>
+
+  <div class="pin">
+    <div><b>Pinned message</b><span>9K OFFICIAL NUMBER PANEL TOOL DOWNLOAD NOW</span></div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px;height:18px;margin-left:auto;color:var(--soft);flex:0 0 auto"><path d="M12 17v5M8 3h8l-1 7 3 3v2H6v-2l3-3z"/></svg>
+  </div>
+
+  <main class="chat">
+    <div class="up">
+      <div class="msg s" style="animation-delay:0.05s"><span class="by">ANANYA 1LVL </span><b class="ttl">👋 Welcome to ANANYA 1 LVL </b><ul class="pts"><li>✅ Daily updates, posted on time</li><li>✅ Useful resources, all in one place</li><li>✅ 100% free to join</li></ul><div class="react"><span>🔥 312</span><span>👍 548</span><span>❤️ 201</span><span>🚀 144</span><span>💯 98</span><span>🎉 76</span></div><div class="meta">👁 2.4K &nbsp;·&nbsp; 9:00 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.12s"><b class="ttl">📚 What you get inside</b><ul class="pts"><li>▫️ Daily updates and announcements</li><li>▫️ Guides and learning material</li><li>▫️ Saved resources, easy to find</li></ul><div class="react"><span>🔥 319</span><span>👍 555</span><span>❤️ 208</span><span>🚀 151</span><span>💯 105</span></div><div class="meta">👁 2.4K &nbsp;·&nbsp; 9:02 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.19s"><b class="ttl">🚀How to join (2 steps)</b><ul class="pts"><li>1️⃣ Tap the <b>Join</b> button below</li><li>2️⃣ Press <b>Join the Channel</b> in Telegram</li></ul><div class="react"><span>🔥 326</span><span>👍 562</span><span>❤️ 215</span><span>🚀 158</span><span>💯 112</span><span>🎉 90</span></div><div class="meta">👁 2.3K &nbsp;·&nbsp; 9:04 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+    </div>
+    <div class="stage">
+      <a class="cta big" data-pc-join href="#" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 240 240" fill="currentColor" aria-hidden="true"><path d="M98.5 167.5l-4 46.8c5.7 0 8.2-2.5 11.2-5.4l26.9-25.9 55.7 41c10.2 5.6 17.5 2.7 20.2-9.4L239 30.9c2.4-11.5-4.2-16-13.7-11.5L4.9 104.3c-11.3 4.4-11.2 10.7-2 13.5l56.6 17.7L190.7 54.1c6.2-4.1 11.9-1.8 7.2 2.3L98.5 167.5z"/></svg></span>
+        <span class="tx"><b>Join Telegram</b><em>Free · 2,427 members inside</em></span>
+        <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <small>Tap to open in Telegram</small>
+    </div>
+
+    <div class="down">
+      <div class="msg s" style="animation-delay:0.38s"><b class="ttl">🔔 Don’t miss a post</b><ul class="pts"><li>✅ Turn on notifications</li><li>✅ Pin the channel to the top</li><li>✅ Check back every day</li></ul><div class="react"><span>🔥 340</span><span>👍 576</span><span>❤️ 229</span><span>🚀 172</span><span>💯 126</span><span>🎉 104</span></div><div class="meta">👁 2.3K &nbsp;·&nbsp; 9:06 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.46s"><b class="ttl">💬 Why members stay</b><ul class="pts"><li>✅ Clear, simple posts</li><li>✅ No spam, no clutter</li><li>✅ Posted on a regular schedule</li></ul><div class="react"><span>🔥 347</span><span>👍 583</span><span>❤️ 236</span><span>🚀 179</span><span>💯 133</span><span>🎉 111</span><span>😍 92</span></div><div class="meta">👁 2.2K &nbsp;·&nbsp; 9:08 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.54s"><b class="ttl">🔒 Good to know</b><ul class="pts"><li>✅ Free to join, leave any time</li><li>✅ We never ask for your password or OTP</li><li>✅ Not affiliated with Telegram</li></ul><div class="react"><span>🔥 354</span><span>👍 590</span><span>❤️ 243</span><span>🚀 186</span><span>💯 140</span></div><div class="meta">👁 2.2K &nbsp;·&nbsp; 9:10 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.62s"><b class="ttl">⚠️ Reminder</b><ul class="pts"><li>✅ Content is educational only</li><li>✅ Not financial or investment advice</li><li>✅ Markets carry risk</li></ul><div class="react"><span>🔥 361</span><span>👍 597</span><span>❤️ 250</span><span>🚀 193</span></div><div class="meta">👁 2.1K &nbsp;·&nbsp; 9:12 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+      <div class="msg s" style="animation-delay:0.70s"><b class="ttl">🤝 Ready to start?</b><ul class="pts"><li>✅ 30,000+ members already inside</li><li>✅ Takes just 2 seconds</li><li>✅ Tap <b>Join</b> and start today</li></ul><div class="react"><span>🔥 368</span><span>👍 604</span><span>❤️ 257</span><span>🚀 200</span><span>💯 154</span><span>🎉 132</span><span>😍 113</span><span>👏 177</span></div><div class="meta">👁 2.1K &nbsp;·&nbsp; 9:14 AM <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6M10 15l1.5 1.5L22 6"/></svg></div></div>
+    </div>
+  </main>
+
+  <footer class="join">
+    <p class="disc"><b>Disclaimer:</b> Content is for educational and informational purposes only — not financial or investment advice. Markets carry risk and past performance does not guarantee future results.</p>
+    <p class="foot">&copy; <span id="yr"></span> Ananya 1lvl · Not affiliated with Telegram</p>
+  </footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
